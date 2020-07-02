@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
+    <table class="table table-bordered" id="table">
+        <thead>
+            <tr>
+                <th>UID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>PhoneNumber</th>
+                <th>Position</th>
+                <th>PostalCode</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="container">
+        <div class="card">
+            <div>UID: <input type="text" name="" id="uid" style="float: right;" disabled></div>
+            <div>FirstName: <input type="text" id="firstName" style="float: right;" disabled></div>
+            <div>LastName: <input type="text" id="lastName" style="float: right;" disabled></div>
+            <div>PhoneNumber: <input type="text" id="phoneNumber" style="float: right;" disabled></div>
+            <div>Position: <input type="text" id="position" style="float: right;" disabled></div>
+            <div>PostalCode: <input type="text" id="postalCode" style="float: right;" disabled></div>
+            <div>City: <input type="text" id="city" style="float: right;" disabled></div>
+            <div>
+                <button type="button" class="btn btn-primary edit" style="margin-right: 138px; margin-bottom: 30px; margin-top: 20px;" onclick="edit()">Edit</button>
+                <button type="button" class="btn btn-danger delete" style="margin-top: 20px;" onclick="del(this.id)" >Delete</button>
+                <button type="button" class="btn btn-warning" style="margin-right: 138px; margin-bottom: 30px; margin-top: 20px; " onclick="cancel()">Cancel</button>
+                <button type="button" class="btn btn-success apply" style="margin-top: 20px;" onclick="apply(this.id)">Apply</button>
+                <button type="button" class="btn btn-success add" style="margin-top: 20px;" onclick="add()">add</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-success " onclick="add1()">add</button>
+</body>
+
+</html>
